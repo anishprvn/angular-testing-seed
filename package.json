@@ -18,7 +18,8 @@
     "start": "node app.js",
     "dev": "npm run clean:dist && npm run clean:compiled && npm run build:dev",
     "qa": "npm run clean:dist && npm run clean:compiled && npm run build:qa",
-    "prod": "npm run clean:dist && npm run clean:compiled && npm run build:prod:aot"
+    "prod": "npm run clean:dist && npm run clean:compiled && npm run build:prod:aot",
+    "test": "karma start"
   },
   "dependencies": {
     "@angular/animations": "^4.0.1",
@@ -40,6 +41,7 @@
     "zone.js": "^0.8.1"
   },
   "devDependencies": {
+    "@types/jasmine": "^2.5.53",
     "@types/node": "^7.0.8",
     "@types/source-map": "^0.5.0",
     "@types/uglify-js": "^2.6.28",
@@ -59,6 +61,11 @@
     "html-webpack-plugin": "^2.28.0",
     "jasmine": "^2.7.0",
     "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^2.0.4",
     "ngc-webpack": "^1.2.0",
     "node-config-manager": "^1.2.0",
     "node-sass": "^4.5.0",

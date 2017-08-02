@@ -25,7 +25,10 @@
       "webpack"
     ]
   },
-  "files": [],
+  "files": [
+    "node",
+    "jasmine"
+  ],
   "exclude": [
     "node_modules",
     "dist"

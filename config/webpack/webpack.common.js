@@ -85,7 +85,7 @@ module.exports = {
     }),
     new CheckerPlugin(),
     new webpack.optimize.CommonsChunkPlugin({
-      name: ['app', 'vendor', 'polyfills', 'markerclusterer']
+      name: ['app', 'vendor', 'polyfills']
     }),
 
     new webpack.LoaderOptionsPlugin({
